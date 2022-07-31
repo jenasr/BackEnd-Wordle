@@ -38,8 +38,9 @@ This is the Back-End version of Wordle. It utilizes 5 different microservices m1
 ## Databases (Executables located in DB/):
 Initialize database: execute create_words_db.py, create_answer_db.py, and create_stats_db.sh in the terminal
 
-* Giver Execute permission: chmod u+x create_words_db.py
-* Execute: ./create_words_db.py
+* Example:
+  * Give Execute permission: chmod u+x create_words_db.py
+  * Execute: ./create_words_db.py
 
 Create shards folder: create empty folder named "Shards" in folder "DB"
 
@@ -58,9 +59,6 @@ Create shards: execute create_shards.py in the terminal
 
 * Microservice 4:
   * uvicorn m4:app --reload
-
-* Microservice 5:
-  * uvicorn m5:app --reload
 
 #### Using Microservice 5 in terminal:
 foreman start
